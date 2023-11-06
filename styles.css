@@ -10,10 +10,10 @@ header {
   display: flex;
   justify-content: center;
   margin: 0;
-  border-radius: 19px;
-  box-shadow: rgba(255, 255, 255, 0.9) 0px -1px 10px 0px inset,
-    rgba(255, 255, 255, 0.439) 0px -10px 30px 0px inset,
-    rgba(255, 255, 255, 0.303) 0px -30px 40px 0px inset;
+  border-radius: 0 0 19px 19px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 0px 0px 0px inset,
+    rgba(255, 255, 255, 0.439) 0px -0px 10px 0px inset,
+    rgba(255, 255, 255, 0.303) 0px -20px 40px 10px inset;
   z-index: 9;
 }
 
@@ -83,4 +83,43 @@ body {
   border: 2px solid white;
   background-color: white;
   color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  position: sticky;
+  bottom: 0;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 19px 19px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px inset,
+    rgba(255, 255, 255, 0.439) 0px 0px 0px 0px inset,
+    rgba(255, 255, 255, 0.303) 0px 0px 40px 0px inset;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  padding: 0.2rem 0;
+}
+
+.home-icon {
+  height: 40px;
+}
+
+.bookmark-icon {
+  height: 30px;
+}
+
+.profil-icon {
+  height: 30px;
 }
