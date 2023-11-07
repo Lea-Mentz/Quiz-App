@@ -12,10 +12,10 @@
   </head>
   <body>
     <header>
-      <h1>Check your brain</h1>
+      <h1>Challenge your brain</h1>
     </header>
     <section class="question-card">
-      <div><image class="bookmark" src="images/lesezeichen.png" alt=""></div>
+      <div ><image id="Bookmark" onclick="changeBookmarks()" class="bookmark inactive" src="images/lesezeichen.png" alt="bookmark inactive"></div>
       <div class="question">
         Question
       </div>
@@ -78,5 +78,11 @@
         <a><img class="profil-icon" src="images/nutzer.png" alt="home icon"></a>
       </nav>
     </footer>
+
+    <script> 
+      function changeBookmarks() {
+      document.getElementById('Bookmark').src = 'images/lesezeichen_orange.png';
+      }
+    </script>
   </body>
 </html>
