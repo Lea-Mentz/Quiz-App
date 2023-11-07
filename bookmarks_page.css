@@ -2,3 +2,9 @@ footer {
   position: fixed;
   width: 40%;
 }
+
+/* a:focus {
+  background-color: rgba(255, 255, 255, 0.817);
+  border-radius: 5px;
+  box-shadow: inset var(--primary-color) 10px 10px 10px 10px;
+} */
