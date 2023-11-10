@@ -14,7 +14,7 @@
     <header>
       <h1>Challenge your brain</h1>
     </header>
-    <section class="question-card">
+    <section id="ActiveCard1" class="question-card">
       <div ><image id="Bookmark" onclick="changeBookmarks()" class="bookmark inactive" src="images/lesezeichen.png" alt="bookmark inactive"></div>
       <div class="question">
         Question
@@ -22,6 +22,9 @@
       <button class="answer-button">
         Show Answer
       </button>
+      <q class="answer hide">
+        Answer
+      </q>
       <div class="choices">
         <button>#html</button>
         <button>#flexbox</button>
@@ -36,6 +39,9 @@
       <button class="answer-button">
         Show Answer
       </button>
+      <q class="answer hide">
+        Answer
+      </q>
       <div class="choices">
         <button>#html</button>
         <button>#flexbox</button>
@@ -50,6 +56,9 @@
       <button class="answer-button">
         Show Answer
       </button>
+      <q class="answer hide">
+        Answer
+      </q>
       <div class="choices">
         <button>#html</button>
         <button>#flexbox</button>
@@ -64,6 +73,9 @@
       <button class="answer-button">
         Show Answer
       </button>
+      <q class="answer hide">
+        Answer
+      </q>
       <div class="choices">
         <button>#html</button>
         <button>#flexbox</button>
@@ -82,7 +94,16 @@
     <script> 
       function changeBookmarks() {
       document.getElementById('Bookmark').src = 'images/lesezeichen_orange.png';
+      const active = src = 'images/lesezeichen_orange.png';
       }
+      if ('changeBookmarks' == false) {
+        document.querySelector(".question-card").slideUp();
+      }
+
+      document.querySelector(".answer").addEventListener('click', () => {
+
+      document.querySelector(".answer").classList.remove("hide");
+      });
     </script>
   </body>
 </html>
