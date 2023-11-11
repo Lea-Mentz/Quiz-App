@@ -252,3 +252,21 @@ input::placeholder {
 input[type="checkbox"] {
   display: none;
 }
+
+.counter {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  width: 10%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.counter img {
+  width: auto;
+  height: 100%;
+}
