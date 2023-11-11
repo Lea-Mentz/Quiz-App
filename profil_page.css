@@ -1,0 +1,18 @@
+.img-profil {
+  border-radius: 250px;
+}
+
+.main-profil {
+  color: white;
+}
+
+.profil-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}

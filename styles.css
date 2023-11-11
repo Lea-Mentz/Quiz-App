@@ -1,3 +1,4 @@
+@import "profil_page.css";
 :root {
   --primary-color: #40146d;
 }
@@ -88,7 +89,8 @@ body {
 
 footer {
   background-color: var(--primary-color);
-  position: sticky;
+  position: fixed;
+  width: 40vw;
   bottom: 0;
   height: 66px;
   display: flex;
@@ -126,12 +128,6 @@ footer a {
   height: 30px;
 }
 
-a:focus {
-  background-color: rgba(255, 255, 255, 0.817);
-  border-radius: 5px;
-  box-shadow: white 0px 0px 10px 0px;
-}
-
 .answer {
   color: white;
   font-family: "Architects Daughter", cursive;
@@ -139,5 +135,120 @@ a:focus {
 }
 
 .hide {
+  display: none;
+}
+
+a:focus {
+  background-color: rgba(255, 255, 255, 0.617);
+  border-radius: 5px;
+  box-shadow: white 0px 0px 10px 0px;
+  height: 50px;
+  width: 40px;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+.current-page {
+  background-color: rgba(255, 255, 255, 0.617);
+  border-radius: 5px;
+  box-shadow: white 0px 0px 10px 0px;
+  height: 50px;
+  width: 40px;
+}
+
+.profil-content h2 {
+  font-family: "Architects Daughter", cursive;
+}
+
+.switch-toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.303);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+  border: 1px solid white;
+}
+
+input:focus + .slider {
+  border: 1px solid white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.name {
+  padding-right: 1rem;
+}
+
+.name input {
+  background-color: rgba(255, 255, 255, 0.303);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.name input:hover {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input[type="checkbox"] {
   display: none;
 }
