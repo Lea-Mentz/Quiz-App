@@ -238,6 +238,7 @@ input:checked + .slider:before {
   border: none;
   border-radius: 10px;
   text-align: center;
+  color: white;
 }
 
 .name input:hover {
