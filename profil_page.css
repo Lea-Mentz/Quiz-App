@@ -1,0 +1,34 @@
+.img-profil {
+  border-radius: 250px;
+}
+
+.main-profil {
+  color: white;
+}
+
+.profil-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.settings {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+.settings-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-icon {
+  height: 40px;
+  width: 40px;
+}

@@ -23,7 +23,7 @@
         Show Answer
       </button>
       <q class="answer hide">
-        Answer
+        Answer 1
       </q>
       <div class="choices">
         <button>#html</button>
@@ -40,7 +40,7 @@
         Show Answer
       </button>
       <q class="answer hide">
-        Answer
+        Answer 2
       </q>
       <div class="choices">
         <button>#html</button>
@@ -57,7 +57,7 @@
         Show Answer
       </button>
       <q class="answer hide">
-        Answer
+        Answer 3
       </q>
       <div class="choices">
         <button>#html</button>
@@ -74,7 +74,7 @@
         Show Answer
       </button>
       <q class="answer hide">
-        Answer
+        Answer 4
       </q>
       <div class="choices">
         <button>#html</button>
@@ -85,9 +85,9 @@
 
     <footer>
       <nav>
-        <a href="index.html"><img class="home-icon" src="images/zuhause.png" alt="home icon"></a>
+        <a class="current-page" href="index.html"><img class="home-icon" src="images/zuhause.png" alt="home icon"></a>
         <a href="bookmarks_page.html"><img class="bookmark-icon" src="images/lesezeichen.png" alt="home icon"></a>
-        <a><img class="profil-icon" src="images/nutzer.png" alt="home icon"></a>
+        <a href="profil_page.html"><img class="profil-icon" src="images/nutzer.png" alt="home icon"></a>
       </nav>
     </footer>
 
@@ -100,10 +100,15 @@
         document.querySelector(".question-card").slideUp();
       }
 
-      document.querySelector(".answer").addEventListener('click', () => {
+      const answer = document.querySelectorAll(".answer-button");
 
-      document.querySelector(".answer").classList.remove("hide");
+      answer.forEach(item => {
+        item.addEventListener('click', event => {
+          const toggleBtn = item.nextElementSibling;
+          toggleBtn.classList.toggle("hide");
+        })     
       });
+
     </script>
   </body>
 </html>
