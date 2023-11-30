@@ -1,4 +1,3 @@
-// import "../form_input.js";
 const bookmark = document.querySelectorAll('[data-js="bookmark-change"]');
 const activeBookmark = "images/lesezeichen_orange.png";
 const inactiveBookmark = "images/lesezeichen.png";
