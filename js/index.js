@@ -31,3 +31,4 @@ answer.forEach((item) => {
     checkIfActive();
   });
 });
+console.log();
