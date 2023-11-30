@@ -1,4 +1,5 @@
 @import "profil_page.css";
+@import "./css/form_page.css";
 :root {
   --primary-color: #40146d;
 }
@@ -125,6 +126,10 @@ footer a {
 }
 
 .profil-icon {
+  height: 30px;
+}
+
+.plus-icon {
   height: 30px;
 }
 
