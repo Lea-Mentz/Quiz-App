@@ -1,0 +1,22 @@
+.form {
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+.form input {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.form legend {
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+input::placeholder {
+  color: grey !important;
+}

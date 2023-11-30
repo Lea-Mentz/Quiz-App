@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <title>New Quizcard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Challenge your brain</h1>
+    </header>
+    <section class="question-card">
+      <form class="form">
+        <legend>Create new Quizcard</legend>
+        <label for="question">Your question</label><br />
+        <input
+          type="text"
+          id="quiestion"
+          name="question"
+          data-js="question"
+          placeholder="Whats your question? But you have to know the answer!"
+        />
+        <br />
+        <label for="answer">Your Answer</label><br />
+        <input
+          type="text"
+          id="answer"
+          name="answer"
+          data-js="answer"
+          placeholder="Give me your answewr?"
+        /><br />
+        <label for="tags">Tag</label><br />
+        <input type="text" id="tags" name="tags" /><br />
+        <button class="answer-button" type="submit" data-js="submitButton">
+          Save new Card
+        </button>
+      </form>
+    </section>
+    <footer>
+      <nav>
+        <a href="index.html"
+          ><img class="home-icon" src="images/zuhause.png" alt="home icon"
+        /></a>
+        <a href="bookmarks_page.html"
+          ><img
+            class="bookmark-icon"
+            src="images/lesezeichen.png"
+            alt="home icon"
+        /></a>
+        <a class="current-page" href="form.html"
+          ><img class="plus-icon" src="images/plus.png" alt="plus Icons"
+        /></a>
+        <a href="profil_page.html"
+          ><img class="profil-icon" src="images/nutzer.png" alt="home icon"
+        /></a>
+      </nav>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
